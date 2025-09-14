@@ -1,5 +1,9 @@
 import os
 
+from pathlib import Path
+import os
+
+BASE_DIR = Path(__file__).resolve().parent.parent
 
 INSTALLED_APPS = [
 'django.contrib.admin',
@@ -71,6 +75,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
 
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
