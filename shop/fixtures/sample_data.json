@@ -1,0 +1,74 @@
+[
+  {
+    "model": "shop.category",
+    "pk": 1,
+    "fields": {
+      "name": "Sensors",
+      "slug": "sensors"
+    }
+  },
+  {
+    "model": "shop.category",
+    "pk": 2,
+    "fields": {
+      "name": "Switches",
+      "slug": "switches"
+    }
+  },
+  {
+    "model": "shop.category",
+    "pk": 3,
+    "fields": {
+      "name": "Wires",
+      "slug": "wires"
+    }
+  },
+  {
+    "model": "shop.product",
+    "pk": 1,
+    "fields": {
+      "category": 1,
+      "name": "Temperature Sensor",
+      "description": "Accurate digital temperature sensor for IoT and industrial projects.",
+      "price": "150.00",
+      "stock": 20,
+      "image": ""
+    }
+  },
+  {
+    "model": "shop.product",
+    "pk": 2,
+    "fields": {
+      "category": 1,
+      "name": "Motion Sensor",
+      "description": "PIR motion sensor for automation systems.",
+      "price": "200.00",
+      "stock": 15,
+      "image": ""
+    }
+  },
+  {
+    "model": "shop.product",
+    "pk": 3,
+    "fields": {
+      "category": 2,
+      "name": "Toggle Switch",
+      "description": "Durable toggle switch for electrical circuits.",
+      "price": "50.00",
+      "stock": 50,
+      "image": ""
+    }
+  },
+  {
+    "model": "shop.product",
+    "pk": 4,
+    "fields": {
+      "category": 3,
+      "name": "Copper Wire Roll",
+      "description": "High-quality copper wire roll for home and industry.",
+      "price": "500.00",
+      "stock": 10,
+      "image": ""
+    }
+  }
+]
