@@ -4,7 +4,7 @@ from django.contrib.auth.models import User
 
 
 class Category(models.Model):
-name = models.CharField(max_length=120)
+     name = models.CharField(max_length=120)
 
 
 def __str__(self):
@@ -62,6 +62,7 @@ return f"{self.product.name} x {self.quantity}"
 
 def total_price(self):
 return self.price * self.quantity
+
 
 
 # Simple Cart stored in session — no DB model for cart itself
