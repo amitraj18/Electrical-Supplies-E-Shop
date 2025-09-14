@@ -8,7 +8,7 @@ class Category(models.Model):
 
 
 def __str__(self):
-return self.name
+     return self.name
 
 
 class Product(models.Model):
@@ -66,3 +66,4 @@ return self.price * self.quantity
 
 
 # Simple Cart stored in session — no DB model for cart itself
+
