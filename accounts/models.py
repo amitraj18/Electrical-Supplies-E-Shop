@@ -1,4 +1,4 @@
-#from django.db import models
+from django.db import models
 from django.contrib.auth.models import User
 
 
@@ -57,3 +57,4 @@ class OrderItem(models.Model):
         return self.price * self.quantity
 
 # Simple Cart stored in session — no DB model for cart itself
+
