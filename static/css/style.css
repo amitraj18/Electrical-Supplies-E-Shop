@@ -1,0 +1,91 @@
+/* static/css/style.css - modern-ish e-shop tweaks */
+:root{
+  --primary:#0d6efd;   /* bootstrap primary */
+  --muted:#6c757d;
+  --card-shadow: 0 6px 18px rgba(14,30,37,0.06);
+  --accent:#ff7a00;
+}
+
+body{
+  background:#f6f8fb;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+.navbar-brand{
+  font-weight:600;
+  letter-spacing:0.3px;
+}
+
+.card.product-card{
+  border: none;
+  border-radius: 12px;
+  box-shadow: var(--card-shadow);
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.card.product-card:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(14,30,37,0.12);
+}
+
+.product-img{
+  height: 180px;
+  object-fit: contain;
+  background: linear-gradient(180deg, #fff, #fbfdff);
+  padding: 12px;
+}
+
+.btn-primary{
+  background: var(--primary);
+  border: none;
+}
+
+.badge-stock{
+  font-size: 0.75rem;
+  padding: .4rem .6rem;
+}
+
+.category-list .list-group-item{
+  border: none;
+  border-radius:8px;
+  margin-bottom:6px;
+  cursor: pointer;
+  transition: background .12s;
+}
+.category-list .list-group-item:hover{
+  background: #fff;
+}
+
+.product-grid .card-body{
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+}
+
+.price{
+  font-weight:700;
+  color:var(--primary);
+  font-size:16px;
+}
+
+.cart-table td, .cart-table th{
+  vertical-align: middle;
+}
+
+.progress-status{
+  display:flex;
+  gap:10px;
+  align-items:center;
+}
+.status-dot{
+  width:14px;height:14px;border-radius:50%;background:#e9ecef;
+}
+.status-dot.active{ background:var(--primary); }
+.status-label{ font-size:0.9rem; color:var(--muted); }
+
+.footer-note{
+  margin-top:40px;
+  text-align:center;
+  color:var(--muted);
+  font-size:0.9rem;
+  padding-bottom:30px;
+}
