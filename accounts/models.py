@@ -3,7 +3,7 @@ from django.contrib.auth.models import User
 
 
 class Category(models.Model):
-    name = models.CharField(max_length=120)
+    name = models.CharField(max_length=120, unique=True)
 
     def __str__(self):
         return self.name
@@ -56,5 +56,5 @@ class OrderItem(models.Model):
     def total_price(self):
         return self.price * self.quantity
 
-# Simple Cart stored in session — no DB model for cart itself
+
 
