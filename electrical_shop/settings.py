@@ -13,7 +13,7 @@ INSTALLED_APPS = [
 'django.contrib.messages',
 'django.contrib.staticfiles',
      "shop",       # 👈 must be here
-"electrical_shop.accounts",  
+"accounts",  
 ]
 
 
@@ -79,6 +79,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
 
 
 
