@@ -30,7 +30,7 @@ class Order(models.Model):
         ('SHIPPED', 'Shipped'),
         ('DELIVERED', 'Delivered'),
     ]
-    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='shop_orders')
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name="shop_orders")
     full_name = models.CharField(max_length=200)
     address = models.TextField()
     phone = models.CharField(max_length=20)
@@ -55,6 +55,7 @@ class OrderItem(models.Model):
 
     def total_price(self):
         return self.price * self.quantity
+
 
 
 
